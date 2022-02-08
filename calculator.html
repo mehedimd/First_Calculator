@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+            <!-- Title Section -->
+        <div class="title">
+            <h1>Supper Calculator</h1>
+            <p>Design By -<span>Mehedi Hasan</span></p>
+        </div>
+            <!-- End Title Section -->
+
+            <!-- Start Main Calculator Section -->
+        <div class="calculator">
+            <div class="display">
+                <input type="text" placeholder="0"  id="display" readonly>
+            </div>
+            <div class="items">
+                <input type="button" value="CLR" onclick="cls()">
+            </div>
+            <div class="items">
+                <input type="button" value="(" onclick="getInput('(')">
+            </div>
+            <div class="items">
+                <input type="button" value=")" onclick="getInput(')')">
+            </div>
+            <div class="items icon">
+                <button type="button"  type="button"  onclick="back()">
+                    <i class='bx bx-x' ></i>
+                </button>             
+            </div>
+            <div class="items">
+                <input type="button" value="7" onclick="getInput('7')">
+            </div>
+            <div class="items">
+                <input type="button" value="8" onclick="getInput('8')">
+            </div>
+            <div class="items">
+                <input type="button" value="9" onclick="getInput('9')">
+            </div>
+            <div class="items">
+                <input type="button" value="*" onclick="getInput('*')">
+            </div>
+            <div class="items">
+                <input type="button" value="4" onclick="getInput('4')">
+            </div>
+            <div class="items">
+                <input type="button" value="5" onclick="getInput('5')">
+            </div>
+            <div class="items">
+                <input type="button" value="6" onclick="getInput('6')">
+            </div>
+            <div class="items">
+                <input type="button" value="-"onclick="getInput('-')">
+            </div>
+            <div class="items">
+                <input type="button" value="1" onclick="getInput('1')">
+            </div>
+            <div class="items">
+                <input type="button" value="2" onclick="getInput('2')">
+            </div>
+            <div class="items">
+                <input type="button" value="3" onclick="getInput('3')">
+            </div>
+            <div class="items">
+                <input type="button" value="/" onclick="getInput('/')">
+            </div>
+            <div class="items">
+                <input type="button" value="0" onclick="getInput('0')">
+            </div>
+            <div class="items">
+                <input type="button" value="." onclick="getInput('.')">
+            </div>
+            <div class="items">
+                <input type="button" value="+" onclick="getInput('+')">
+            </div>
+            <div class="items">
+                <input type="button" value="=" onclick="result()">
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+</body>
+</html>
