@@ -11,8 +11,8 @@
 <body>
             <!-- Title Section -->
         <div class="title">
-            <h1>Supper Calculator</h1>
-            <p>Design By -<span>Mehedi Hasan</span></p>
+            <h1>Calculator</h1>
+           
         </div>
             <!-- End Title Section -->
 
@@ -21,8 +21,8 @@
             <div class="display">
                 <input type="text" placeholder="0"  id="display" readonly>
             </div>
-            <div class="items">
-                <input type="button" value="CLR" onclick="cls()">
+            <div class="items" id="clr">
+                <input  type="button" value="CLR" onclick="cls()">
             </div>
             <div class="items">
                 <input type="button" value="(" onclick="getInput('(')">
@@ -32,7 +32,7 @@
             </div>
             <div class="items icon">
                 <button type="button"  type="button"  onclick="back()">
-                    <i class='bx bx-x' ></i>
+                    <i class='bx bx-left-arrow-alt'></i>
                 </button>             
             </div>
             <div class="items">
@@ -44,7 +44,7 @@
             <div class="items">
                 <input type="button" value="9" onclick="getInput('9')">
             </div>
-            <div class="items">
+            <div class="items" id="multipulation">
                 <input type="button" value="*" onclick="getInput('*')">
             </div>
             <div class="items">
@@ -56,7 +56,7 @@
             <div class="items">
                 <input type="button" value="6" onclick="getInput('6')">
             </div>
-            <div class="items">
+            <div class="items" id="substruction">
                 <input type="button" value="-"onclick="getInput('-')">
             </div>
             <div class="items">
@@ -68,7 +68,7 @@
             <div class="items">
                 <input type="button" value="3" onclick="getInput('3')">
             </div>
-            <div class="items">
+            <div class="items" id="division">
                 <input type="button" value="/" onclick="getInput('/')">
             </div>
             <div class="items">
@@ -77,13 +77,18 @@
             <div class="items">
                 <input type="button" value="." onclick="getInput('.')">
             </div>
-            <div class="items">
+            <div class="items" id="summation">
                 <input type="button" value="+" onclick="getInput('+')">
             </div>
-            <div class="items">
+            <div class="items" id="equal">
                 <input type="button" value="=" onclick="result()">
             </div>
         </div>
+        
+        <!-- footer section -->
+        <footer>
+            <p>Design By -<a>Mehedi Hasan</a></p>
+        </footer>
 
         <script src="calculator.js"></script>
 </body>
